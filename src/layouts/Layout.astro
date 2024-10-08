@@ -43,6 +43,18 @@ const { language, textDirection } = I18N;
   <body class="antialiased text-default bg-page tracking-tight">
     <slot />
 
+    <!-- Aqui é o lugar ideal para inserir o widget de chat -->
+    <!-- Widget Env Script -->
+    <script>
+      (window as any).Zaia = {
+        AgentURL: "https://platform.zaia.app/embed/chat/26114",
+      };
+    </script>
+    
+    <!-- Widget Loader Script -->
+    <script src="https://cdn.zapgpt.com.br/widget-loader.js"></script>
+
     <BasicScripts />
   </body>
 </html>
+
