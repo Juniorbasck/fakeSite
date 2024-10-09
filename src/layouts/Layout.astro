@@ -42,22 +42,6 @@ const { language, textDirection } = I18N;
 
   <body class="antialiased text-default bg-page tracking-tight">
     <slot />
-
-    
-    <iframe id="zaia-iframe"
-      src="https://platform.zaia.app/embed/chat/26114"
-      style="border: none; width: 400px; height: 600px; border-radius: 20px; border: 1px #eee solid;">
-    </iframe>
-
-    <script>
-      (window as any).Zaia = {
-        AgentURL: "https://platform.zaia.app/embed/chat/26114",
-      };
-    </script>
-    
-    <!-- Widget Loader Script -->
-    <script src="https://cdn.zapgpt.com.br/widget-loader.js"></script>
-
     <BasicScripts />
   </body>
 </html>
